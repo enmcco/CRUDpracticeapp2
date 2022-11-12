@@ -12,6 +12,7 @@ controller.getToDo = (req, res, next) => {
         console.log("Our todos:", todos.rows)
         res.locals.todos = todos.rows;
         return next();
+        // comment
     })
     .catch(err => {
         console.log("You didn't receive your querry from the database")
